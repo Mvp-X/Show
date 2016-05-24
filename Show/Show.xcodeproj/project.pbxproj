@@ -29,6 +29,9 @@
 		AE855F691CF3992B009B7AF9 /* MvpArticleTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE855F681CF3992B009B7AF9 /* MvpArticleTabController.m */; };
 		AE855F6B1CF39998009B7AF9 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE855F6A1CF39998009B7AF9 /* Article.storyboard */; };
 		AE855F6E1CF39A64009B7AF9 /* MvpChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE855F6D1CF39A64009B7AF9 /* MvpChannel.m */; };
+		AE855F711CF43C92009B7AF9 /* MvpCar.m in Sources */ = {isa = PBXBuildFile; fileRef = AE855F701CF43C92009B7AF9 /* MvpCar.m */; };
+		AE855F731CF43CCF009B7AF9 /* cars_total.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE855F721CF43CCF009B7AF9 /* cars_total.plist */; };
+		AE855F761CF43E89009B7AF9 /* MvpCarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AE855F751CF43E89009B7AF9 /* MvpCarGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +74,11 @@
 		AE855F6A1CF39998009B7AF9 /* Article.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
 		AE855F6C1CF39A64009B7AF9 /* MvpChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MvpChannel.h; sourceTree = "<group>"; };
 		AE855F6D1CF39A64009B7AF9 /* MvpChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvpChannel.m; sourceTree = "<group>"; };
+		AE855F6F1CF43C92009B7AF9 /* MvpCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MvpCar.h; sourceTree = "<group>"; };
+		AE855F701CF43C92009B7AF9 /* MvpCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvpCar.m; sourceTree = "<group>"; };
+		AE855F721CF43CCF009B7AF9 /* cars_total.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars_total.plist; sourceTree = "<group>"; };
+		AE855F741CF43E89009B7AF9 /* MvpCarGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MvpCarGroup.h; sourceTree = "<group>"; };
+		AE855F751CF43E89009B7AF9 /* MvpCarGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvpCarGroup.m; sourceTree = "<group>"; };
 		E17B5CE85BDD3E8A88EA7601 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +137,7 @@
 				AE855F161CF2E191009B7AF9 /* LaunchScreen.storyboard */,
 				AE855F5C1CF39552009B7AF9 /* More.storyboard */,
 				AE855F6A1CF39998009B7AF9 /* Article.storyboard */,
+				AE855F721CF43CCF009B7AF9 /* cars_total.plist */,
 				AE855F2A1CF2E887009B7AF9 /* Info.plist */,
 				AE855F081CF2E191009B7AF9 /* Supporting Files */,
 			);
@@ -341,6 +350,10 @@
 			children = (
 				AE855F6C1CF39A64009B7AF9 /* MvpChannel.h */,
 				AE855F6D1CF39A64009B7AF9 /* MvpChannel.m */,
+				AE855F6F1CF43C92009B7AF9 /* MvpCar.h */,
+				AE855F701CF43C92009B7AF9 /* MvpCar.m */,
+				AE855F741CF43E89009B7AF9 /* MvpCarGroup.h */,
+				AE855F751CF43E89009B7AF9 /* MvpCarGroup.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -420,6 +433,7 @@
 			files = (
 				AE855F2B1CF2E887009B7AF9 /* Info.plist in Resources */,
 				AE855F5D1CF39552009B7AF9 /* More.storyboard in Resources */,
+				AE855F731CF43CCF009B7AF9 /* cars_total.plist in Resources */,
 				AE855F181CF2E191009B7AF9 /* LaunchScreen.storyboard in Resources */,
 				AE855F6B1CF39998009B7AF9 /* Article.storyboard in Resources */,
 				AE855F261CF2E806009B7AF9 /* Assets.xcassets in Resources */,
@@ -481,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE855F761CF43E89009B7AF9 /* MvpCarGroup.m in Sources */,
 				AE855F691CF3992B009B7AF9 /* MvpArticleTabController.m in Sources */,
 				AE855F601CF3969D009B7AF9 /* MvpMoreController.m in Sources */,
 				AE855F441CF2F4DC009B7AF9 /* MvpGuideCell.m in Sources */,
@@ -495,6 +510,7 @@
 				AE855F0A1CF2E191009B7AF9 /* main.m in Sources */,
 				AE855F631CF39869009B7AF9 /* MvpChannelLabel.m in Sources */,
 				AE855F471CF3702C009B7AF9 /* MvpCustomBar.m in Sources */,
+				AE855F711CF43C92009B7AF9 /* MvpCar.m in Sources */,
 				AE855F3B1CF2EFF4009B7AF9 /* MvpMainTabBarController.m in Sources */,
 				AE855F5B1CF37B06009B7AF9 /* MvpItController.m in Sources */,
 			);
