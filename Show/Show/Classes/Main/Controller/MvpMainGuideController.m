@@ -9,6 +9,7 @@
 #import "MvpMainGuideController.h"
 #import "MvpGuideCell.h"
 #import "Masonry.h"
+#import "MvpMainTabBarController.h"
 
 @interface MvpMainGuideController ()
 
@@ -19,7 +20,7 @@
 static NSString * const reuseIdentifier = @"MvpGuideCell";
 
 
-- (instancetype)init
+- (instancetype)initMvpMainTabBarController
 {
     // 创建流水布局
     UICollectionViewFlowLayout* layout = [[UICollectionViewFlowLayout alloc] init];
@@ -96,7 +97,7 @@ static NSString * const reuseIdentifier = @"MvpGuideCell";
 //点击点击按钮
 -(void)clickBtn{
 
-    [self presentViewController:[[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateInitialViewController] animated:NO completion:nil];
+    [self presentViewController:[[MvpMainTabBarController alloc]init] animated:NO completion:nil];
     NSLog(@"--");
 }
 

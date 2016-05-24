@@ -10,4 +10,7 @@
 
 @interface MvpNavController : UINavigationController
 
+@property (nonatomic, strong) UIView *tabBar;
+
+
 @end

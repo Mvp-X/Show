@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "MvpMainGuideController.h"
-#import "MvpNavController.h"
 #import "MvpMainTabBarController.h"
 
 @interface AppDelegate ()
@@ -20,8 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    // 创建window
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     // 设置根控制器
     self.window.rootViewController = [self pickViewController];
+    
+    // 显示window
+    [self.window makeKeyAndVisible];
     
     // 把当前的版本号(info) 存到沙河
       [self saveAppVersion];
@@ -34,9 +38,9 @@
     // 获取当前程序的版本(info.plist里面的版本号)和沙盒之前保存的版本号对比
     if ([[self loadAppVersion] isEqualToString:[self loadSavedAppVersion]]) {
         // 如果 一样 显示tabbar
+        MvpMainTabBarController* tabbarController = [[MvpMainTabBarController alloc]init];
         
-        // 加载storyboard的tabbarController(window的根控制器)
-        return self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateInitialViewController];;
+        return tabbarController;
     }
     else {
         // 如果不一样 那么显示 新特性
