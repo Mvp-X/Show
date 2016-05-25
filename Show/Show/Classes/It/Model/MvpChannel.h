@@ -10,7 +10,17 @@
 
 @interface MvpChannel : NSObject
 
+//频道id
+@property(nonatomic,copy)NSString *tid;
+
+//频道名称
+@property(nonatomic,copy)NSString *tname;
+
+//每一个频道对应的加载数据的URLString
+
+@property(nonatomic,copy,readonly)NSString *URLString;
+
 //返回模型数组
-+ (NSArray *)channels;
++ (NSArray *)Mvpchannels;
 
 @end

@@ -45,6 +45,11 @@
     [self setupChannelLabels];
     //关掉自适应
     self.automaticallyAdjustsScrollViewInsets = NO;
+    //取消滚动条
+    self.ArticleContentCollectionView.showsHorizontalScrollIndicator = NO;
+    self.ArticleContentCollectionView.showsVerticalScrollIndicator = NO;
+    //取消弹簧
+    self.ArticleContentCollectionView.bounces = NO;
     
     //设置我们ContentCollectionView里面的itemSize
     [self setContentCollectionViewItemSize];
@@ -66,7 +71,7 @@
 #pragma mark - 加载频道的标签
 - (void)setupChannelLabels{
     //1.通过模型去加载模型数组
-    self.channels = [MvpChannel channels];
+    self.channels = [MvpChannel Mvpchannels];
     
     //2.循环去创建对应个数的ChannelLabel
     CGFloat channelLabelX = 0;
@@ -92,7 +97,7 @@
         channelLabel.frame = CGRectMake(channelLabelX, channelLabelY, channelLabelW, channelLabelH);
         
         //2.3 设置文字
-        channelLabel.text = self.channels[i];
+        channelLabel.text = [self.channels[i] tname];
         
         //2.4 加入父控件身上
         [self.channelScrollView addSubview:channelLabel];
@@ -113,18 +118,6 @@
 }
 
 
-//-(void)viewWillAppear:(BOOL)animated{
-//    [super viewWillAppear:animated];
-//    self.tabBarController.tabBar.hidden = YES;
-//    
-//}
-//
-//-(void)viewWillDisappear:(BOOL)animated{
-//    [super viewWillDisappear:animated];
-//    self.tabBarController.tabBar.hidden = NO;
-//}
-
-
 #pragma mark - CollectionView数据源方法
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return self.channels.count;
@@ -132,7 +125,10 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     MvpMoreCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Mvp" forIndexPath:indexPath];
+    //取模型
+    MvpChannel *currentChannel = self.channels[indexPath.item];
     
+    cell.URLString = currentChannel.URLString;
     
     return cell;
 }
@@ -253,5 +249,8 @@
     [self dismissViewControllerAnimated:NO completion:Nil];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+}
 
 @end

@@ -36,6 +36,10 @@
     //添加到item.contentView
     [self.contentView addSubview:self.ArticleVC.tableView];
 }
-
+//传给控制器
+-(void)setURLString:(NSString *)URLString{
+    
+    self.ArticleVC.vcURLString = URLString;
+}
 
 @end

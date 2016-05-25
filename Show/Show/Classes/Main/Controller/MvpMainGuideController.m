@@ -20,19 +20,34 @@
 static NSString * const reuseIdentifier = @"MvpGuideCell";
 
 
-- (instancetype)initMvpMainTabBarController
+- (instancetype)init
 {
     // 创建流水布局
     UICollectionViewFlowLayout* layout = [[UICollectionViewFlowLayout alloc] init];
     
-    // 设置item大小
-    layout.itemSize = [UIScreen mainScreen].bounds.size;
-    // 间距
-    layout.minimumLineSpacing = 0;
-    // 横向滑动
-    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    
-    return [super initWithCollectionViewLayout:layout];
+    if (self = [super initWithCollectionViewLayout:layout]) {
+        
+        layout.itemSize = [UIScreen mainScreen].bounds.size;
+        //设置最小item间的间距
+        layout.minimumInteritemSpacing = 0;
+        
+        //设置最小行的间距
+        layout.minimumLineSpacing = 0;
+        
+        //4.滚动方向
+        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        
+        //一页一页
+        self.collectionView.showsHorizontalScrollIndicator = NO;
+        
+        //设置分页
+        layout.collectionView.pagingEnabled = YES;
+        
+        //没有弹簧效果
+        layout.collectionView.bounces = NO;
+    }
+    return self;
+
 }
 
 - (void)viewDidLoad {
@@ -74,7 +89,7 @@ static NSString * const reuseIdentifier = @"MvpGuideCell";
     MvpGuideCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // 获取引导页的背景图
-    UIImage* image = [UIImage imageNamed:[NSString stringWithFormat:@"0%d引导页%d_640x960", indexPath.item + 2,indexPath.item + 1]];
+    UIImage* image = [UIImage imageNamed:[NSString stringWithFormat:@"0%ld引导页%ld_640x960", indexPath.item + 2,indexPath.item + 1]];
     
     // 把图片传到cell中
     cell.image = image;
@@ -98,7 +113,7 @@ static NSString * const reuseIdentifier = @"MvpGuideCell";
 -(void)clickBtn{
 
     [self presentViewController:[[MvpMainTabBarController alloc]init] animated:NO completion:nil];
-    NSLog(@"--");
+    NSLog(@"-Mvp-");
 }
 
 @end

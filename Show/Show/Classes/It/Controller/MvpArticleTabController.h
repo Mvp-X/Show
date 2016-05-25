@@ -10,4 +10,7 @@
 
 @interface MvpArticleTabController : UITableViewController
 
+//频道对应标签的url
+@property(nonatomic,copy)NSString *vcURLString;
+
 @end

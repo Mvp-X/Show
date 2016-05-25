@@ -11,7 +11,7 @@
 @interface MvpCarGroup : NSObject
 
 //车的数组
-@property (nonatomic,strong) NSArray *cars;
+@property (nonatomic,strong) NSMutableArray *cars;
 
 //标头
 @property (nonatomic,copy) NSString *title;

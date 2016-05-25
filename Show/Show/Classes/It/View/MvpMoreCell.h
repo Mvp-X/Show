@@ -10,4 +10,7 @@
 
 @interface MvpMoreCell : UICollectionViewCell
 
+//频道对应的urlString
+@property(nonatomic,copy)NSString *URLString;
+
 @end
