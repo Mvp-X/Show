@@ -9,6 +9,9 @@
 #import "MvpItController.h"
 #import "MvpCarGroup.h"
 #import "MvpCar.h"
+//Setting控制器代码创建
+#import "MvpSettingController.h"
+
 
 @interface MvpItController ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
 
@@ -58,13 +61,26 @@
 }
 
 -(void)setNavBarItem{
-self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"More" style:UIBarButtonItemStylePlain target:self action:@selector(PushMore)];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Login" style:UIBarButtonItemStylePlain target:self action:@selector(Login)];
+self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Setting" style:UIBarButtonItemStylePlain target:self action:@selector(Setting)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"More" style:UIBarButtonItemStylePlain target:self action:@selector(PushMore)];
 
 }
 
--(void)Login{
+-(void)Setting{
 
+    MvpSettingController *ST = [[MvpSettingController alloc]initWithStyle:UITableViewStylePlain];
+    // 常见问题的按钮 - 不要写在setting的viewdidload中 因为会有复用
+    UIBarButtonItem* helpItem = [[UIBarButtonItem alloc] initWithTitle:@"常见问题" style:UIBarButtonItemStylePlain target:self action:nil];
+    ST.navigationItem.rightBarButtonItem = helpItem;
+    
+    // 设置标题
+    ST.navigationItem.title = @"设置";
+    ST.plistName = @"Setting";
+    
+    [self.navigationController pushViewController:ST animated:YES];
+
+//    [self presentViewController: ST animated:NO completion:nil];
+    
 
 }
 

@@ -28,18 +28,20 @@
                                             <constraint firstAttribute="width" constant="1" id="x1J-kh-3TM"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaQ-BC-iPe">
-                                        <rect key="frame" x="67" y="9" width="80" height="25"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaQ-BC-iPe">
+                                        <rect key="frame" x="67" y="4.5" width="80" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="llO-CK-E4G"/>
+                                            <constraint firstAttribute="height" constant="35" id="q9l-cP-E1E"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="登录"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku6-oa-7cm">
-                                        <rect key="frame" x="228" y="9" width="80" height="25"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku6-oa-7cm">
+                                        <rect key="frame" x="228" y="4.5" width="80" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="ETd-7G-Uxi"/>
+                                            <constraint firstAttribute="height" constant="35" id="GNX-cL-jcU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="注册"/>
@@ -56,8 +58,8 @@
                                     <constraint firstItem="gaQ-BC-iPe" firstAttribute="centerY" secondItem="4Nz-Bz-1ft" secondAttribute="centerY" id="sw6-cd-kGx"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UEl-3Y-9uU">
-                                <rect key="frame" x="-1" y="64" width="375" height="44"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEl-3Y-9uU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.91086647730000003" green="0.91086647730000003" blue="0.91086647730000003" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="BlM-KV-o92"/>

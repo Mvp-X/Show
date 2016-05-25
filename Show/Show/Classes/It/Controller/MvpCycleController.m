@@ -75,10 +75,9 @@
     [pageControl setValue:[UIImage imageNamed:@"compose_keyboard_dot_normal"] forKey:@"_pageImage"];
     [pageControl setValue:[UIImage imageNamed:@"compose_keyboard_dot_selected"] forKey:@"_currentPageImage"];
     
-    //2.添加到collectionView
+    //2.添加到collectionView--self.view不同于self.collectionView
     [self.view addSubview:pageControl];
     
-#warning self.view不同于self.collectionView
     //设置Frame
     [pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.view).offset(-6);

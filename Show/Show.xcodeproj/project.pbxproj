@@ -39,6 +39,11 @@
 		AE855F841CF5EB55009B7AF9 /* MvpCycleController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE855F831CF5EB55009B7AF9 /* MvpCycleController.m */; };
 		AE855F871CF5EB93009B7AF9 /* MvpCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = AE855F861CF5EB93009B7AF9 /* MvpCycle.m */; };
 		AE855F8A1CF5F044009B7AF9 /* MvpCycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE855F891CF5F044009B7AF9 /* MvpCycleCell.m */; };
+		AE855F8D1CF632A9009B7AF9 /* MvpSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE855F8C1CF632A9009B7AF9 /* MvpSettingController.m */; };
+		AE855F921CF63F4C009B7AF9 /* MvpSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE855F911CF63F4C009B7AF9 /* MvpSettingCell.m */; };
+		AE855F941CF641DC009B7AF9 /* SettingAbout.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE855F931CF641DC009B7AF9 /* SettingAbout.plist */; };
+		AE855F961CF641E4009B7AF9 /* SettingPush.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE855F951CF641E4009B7AF9 /* SettingPush.plist */; };
+		AE855F981CF641EC009B7AF9 /* Setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE855F971CF641EC009B7AF9 /* Setting.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +104,13 @@
 		AE855F861CF5EB93009B7AF9 /* MvpCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvpCycle.m; sourceTree = "<group>"; };
 		AE855F881CF5F044009B7AF9 /* MvpCycleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MvpCycleCell.h; sourceTree = "<group>"; };
 		AE855F891CF5F044009B7AF9 /* MvpCycleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvpCycleCell.m; sourceTree = "<group>"; };
+		AE855F8B1CF632A9009B7AF9 /* MvpSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MvpSettingController.h; sourceTree = "<group>"; };
+		AE855F8C1CF632A9009B7AF9 /* MvpSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvpSettingController.m; sourceTree = "<group>"; };
+		AE855F901CF63F4C009B7AF9 /* MvpSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MvpSettingCell.h; sourceTree = "<group>"; };
+		AE855F911CF63F4C009B7AF9 /* MvpSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvpSettingCell.m; sourceTree = "<group>"; };
+		AE855F931CF641DC009B7AF9 /* SettingAbout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingAbout.plist; sourceTree = "<group>"; };
+		AE855F951CF641E4009B7AF9 /* SettingPush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingPush.plist; sourceTree = "<group>"; };
+		AE855F971CF641EC009B7AF9 /* Setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Setting.plist; sourceTree = "<group>"; };
 		E17B5CE85BDD3E8A88EA7601 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +170,9 @@
 				AE855F5C1CF39552009B7AF9 /* More.storyboard */,
 				AE855F6A1CF39998009B7AF9 /* Article.storyboard */,
 				AE855F721CF43CCF009B7AF9 /* cars_total.plist */,
+				AE855F971CF641EC009B7AF9 /* Setting.plist */,
+				AE855F931CF641DC009B7AF9 /* SettingAbout.plist */,
+				AE855F951CF641E4009B7AF9 /* SettingPush.plist */,
 				AE855F2A1CF2E887009B7AF9 /* Info.plist */,
 				AE855F7D1CF5A0D8009B7AF9 /* topic_news.json */,
 				AE855F081CF2E191009B7AF9 /* Supporting Files */,
@@ -366,6 +381,8 @@
 				AE855F681CF3992B009B7AF9 /* MvpArticleTabController.m */,
 				AE855F821CF5EB55009B7AF9 /* MvpCycleController.h */,
 				AE855F831CF5EB55009B7AF9 /* MvpCycleController.m */,
+				AE855F8B1CF632A9009B7AF9 /* MvpSettingController.h */,
+				AE855F8C1CF632A9009B7AF9 /* MvpSettingController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -398,6 +415,8 @@
 				AE855F801CF5AF25009B7AF9 /* MvpNewsCell.m */,
 				AE855F881CF5F044009B7AF9 /* MvpCycleCell.h */,
 				AE855F891CF5F044009B7AF9 /* MvpCycleCell.m */,
+				AE855F901CF63F4C009B7AF9 /* MvpSettingCell.h */,
+				AE855F911CF63F4C009B7AF9 /* MvpSettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -467,9 +486,12 @@
 				AE855F7E1CF5A0D8009B7AF9 /* topic_news.json in Resources */,
 				AE855F2B1CF2E887009B7AF9 /* Info.plist in Resources */,
 				AE855F5D1CF39552009B7AF9 /* More.storyboard in Resources */,
+				AE855F941CF641DC009B7AF9 /* SettingAbout.plist in Resources */,
 				AE855F731CF43CCF009B7AF9 /* cars_total.plist in Resources */,
+				AE855F961CF641E4009B7AF9 /* SettingPush.plist in Resources */,
 				AE855F181CF2E191009B7AF9 /* LaunchScreen.storyboard in Resources */,
 				AE855F6B1CF39998009B7AF9 /* Article.storyboard in Resources */,
+				AE855F981CF641EC009B7AF9 /* Setting.plist in Resources */,
 				AE855F261CF2E806009B7AF9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +557,7 @@
 				AE855F691CF3992B009B7AF9 /* MvpArticleTabController.m in Sources */,
 				AE855F8A1CF5F044009B7AF9 /* MvpCycleCell.m in Sources */,
 				AE855F601CF3969D009B7AF9 /* MvpMoreController.m in Sources */,
+				AE855F8D1CF632A9009B7AF9 /* MvpSettingController.m in Sources */,
 				AE855F441CF2F4DC009B7AF9 /* MvpGuideCell.m in Sources */,
 				AE855F6E1CF39A64009B7AF9 /* MvpChannel.m in Sources */,
 				AE855F841CF5EB55009B7AF9 /* MvpCycleController.m in Sources */,
@@ -546,6 +569,7 @@
 				AE855F551CF37AD8009B7AF9 /* MvpMineController.m in Sources */,
 				AE855F3E1CF2F024009B7AF9 /* MvpMainGuideController.m in Sources */,
 				AE855F581CF37AF4009B7AF9 /* MvpYourController.m in Sources */,
+				AE855F921CF63F4C009B7AF9 /* MvpSettingCell.m in Sources */,
 				AE855F661CF3988B009B7AF9 /* MvpMoreCell.m in Sources */,
 				AE855F0A1CF2E191009B7AF9 /* main.m in Sources */,
 				AE855F631CF39869009B7AF9 /* MvpChannelLabel.m in Sources */,

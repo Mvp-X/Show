@@ -101,10 +101,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="58S-Hw-gw0">
-                                            <rect key="frame" x="130" y="41.5" width="114" height="70"/>
+                                            <rect key="frame" x="130" y="41" width="114" height="70"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pqH-45-Vea">
-                                            <rect key="frame" x="252" y="41.5" width="114.5" height="70"/>
+                                            <rect key="frame" x="252" y="41" width="114.5" height="70"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oro-ch-PwL">
                                             <rect key="frame" x="322" y="13" width="50" height="16"/>
@@ -116,13 +116,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R1S-9B-s03">
-                                            <rect key="frame" x="8" y="41.5" width="114.5" height="70"/>
+                                            <rect key="frame" x="8" y="41" width="114.5" height="70"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="70" id="8Th-A9-iZ9"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTo-Ns-Xde">
-                                            <rect key="frame" x="8" y="10" width="200" height="23.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTo-Ns-Xde">
+                                            <rect key="frame" x="10" y="10" width="200" height="23.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="200" id="hbc-1Z-kl5"/>
                                             </constraints>
@@ -264,8 +264,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uca-hz-1eB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="230.5"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uca-hz-1eB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="228"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbq-V3-hsc">
                                             <rect key="frame" x="3" y="230" width="150" height="17"/>
