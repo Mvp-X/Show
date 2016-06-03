@@ -19,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //延迟2秒
-    [NSThread sleepForTimeInterval:1.0];
+//    [NSThread sleepForTimeInterval:1.0];
     // 创建window
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     // 设置根控制器

@@ -16,21 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.delegate = self;
-    
-    // 设置文字颜色为白色
-    [self.navigationBar setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }];
-    
-    // 设置tint颜色为白色
-    [self.navigationBar setTintColor:[UIColor whiteColor]];
-    
+
     //设置底图
     UIImage *image = [UIImage imageNamed:@"dl_yzm"];
     UIImage *newImage = [image resizableImageWithCapInsets:UIEdgeInsetsMake(image.size.width * 0.5 ,image.size.height * 0.5,image.size.width * 0.5 ,image.size.height * 0.5) resizingMode:UIImageResizingModeStretch];
     // 设置导航栏背景图片
     [self.navigationBar setBackgroundImage:newImage forBarMetrics:UIBarMetricsDefault];
+    
+    // 设置文字颜色为白色
     NSDictionary *attrs = @{NSFontAttributeName : [UIFont systemFontOfSize:17], NSForegroundColorAttributeName : [UIColor whiteColor]};
     [self.navigationBar setTitleTextAttributes:attrs];
+    
+    // 设置tint颜色为白色
+    [self.navigationBar setTintColor:[UIColor whiteColor]];
+    
     //半透明--位置会发生变化
 //    self.navigationBar.translucent = NO;
 }
