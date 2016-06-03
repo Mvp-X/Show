@@ -27,7 +27,6 @@
     [super viewDidLoad];
     // 初始化自定义的tabBar
     [self setupCustomTabBar];
-    
     //设置子控制器
     [self setChildController];
 }
@@ -57,7 +56,7 @@
     [self addChildViewController:NaV];
     //添加按钮
     [self.customTabBar addTabBarBtnWithItem:childVc.tabBarItem];
-    
+    NaV.tabBar = self.customTabBar;
     
     
 }

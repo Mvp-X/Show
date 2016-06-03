@@ -11,13 +11,21 @@
 #import "MvpCar.h"
 //Setting控制器代码创建
 #import "MvpSettingController.h"
-
+#import "MvpMoreController.h"
+#import "MvpNavController.h"
+/** RGB颜色 */
+#define RGB(r, g, b) [UIColor colorWithRed: (r)/255.0 green: (g)/255.0 blue: (b)/255.0  alpha:1.0]
 
 @interface MvpItController ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
 
 @property (nonatomic,strong) NSArray *carGroupArray;
 
 @property (nonatomic,strong) NSIndexPath *indexPath;
+
+//搜索相关
+
+@property(nonatomic,strong)UISearchBar *searchBar;
+
 
 @end
 
@@ -46,6 +54,32 @@
     
 }
 
+-(UISearchBar *)searchBar{
+    
+    if (_searchBar == nil) {
+        
+        _searchBar =[[UISearchBar alloc]initWithFrame:CGRectMake(0, 0,[UIScreen mainScreen].bounds.size.width , 40)];
+        
+        _searchBar.placeholder = @"可输入车型首字母进行搜索";
+        
+        for (UIView *view in _searchBar.subviews) {
+            // for before iOS7.0
+            if ([view isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
+                [view removeFromSuperview];
+                break;
+            }
+            // for later iOS7.0(include)
+            if ([view isKindOfClass:NSClassFromString(@"UIView")] && view.subviews.count > 0) {
+                [[view.subviews objectAtIndex:0] removeFromSuperview];
+                break;
+            }
+        }
+        
+    }
+    
+    return _searchBar;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,7 +89,7 @@
     self.tableView.showsVerticalScrollIndicator = NO;
     //设置分割线
 //    self.tableView.separatorColor = [UIColor redColor];
-    
+//    self.tableView.separatorInset = UIEdgeInsetsMake(0, 30, 0, 0);
 //--------此处填写加载数据方法--------
     
 }
@@ -85,8 +119,7 @@ self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@
 }
 
 -(void)PushMore{
-
-    [self presentViewController:[[UIStoryboard storyboardWithName:@"More" bundle:nil]instantiateInitialViewController] animated:NO completion:nil];
+    [self.navigationController pushViewController:[[UIStoryboard storyboardWithName:@"More" bundle:nil]instantiateInitialViewController] animated:YES];
 
 }
 

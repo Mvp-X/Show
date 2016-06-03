@@ -80,7 +80,7 @@
     
     //设置Frame
     [pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.view).offset(-6);
+        make.right.equalTo(self.view).offset(-18);
         make.bottom.equalTo(self.view).offset(8);
     }];
     

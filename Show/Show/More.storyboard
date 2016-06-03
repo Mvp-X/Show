@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ShA-Ep-nqH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xYN-la-lmc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -29,22 +29,24 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaQ-BC-iPe">
-                                        <rect key="frame" x="67" y="4.5" width="80" height="35"/>
+                                        <rect key="frame" x="67" y="4" width="80" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="llO-CK-E4G"/>
                                             <constraint firstAttribute="height" constant="35" id="q9l-cP-E1E"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="登录"/>
+                                        <state key="normal" title="登录" image="cy_xc"/>
+                                        <state key="highlighted" image="cy_rxc"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku6-oa-7cm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku6-oa-7cm">
                                         <rect key="frame" x="228" y="4.5" width="80" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="ETd-7G-Uxi"/>
                                             <constraint firstAttribute="height" constant="35" id="GNX-cL-jcU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="注册"/>
+                                        <state key="normal" title="注册" image="cy_rxc"/>
+                                        <state key="highlighted" image="cy_xc"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.31216251579999998" blue="0.32005501089999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,7 +62,7 @@
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEl-3Y-9uU">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                <color key="backgroundColor" red="0.91086647730000003" green="0.91086647730000003" blue="0.91086647730000003" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="BlM-KV-o92"/>
                                 </constraints>
@@ -99,19 +101,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="E8c-d4-Tfb" firstAttribute="leading" secondItem="pb8-ai-qf8" secondAttribute="leading" id="9J7-45-Ahq"/>
+                            <constraint firstItem="KXR-gJ-uCz" firstAttribute="top" secondItem="E8c-d4-Tfb" secondAttribute="bottom" id="9Vg-Z2-gif"/>
                             <constraint firstAttribute="trailing" secondItem="E8c-d4-Tfb" secondAttribute="trailing" id="BcW-3w-NcK"/>
                             <constraint firstItem="KXR-gJ-uCz" firstAttribute="top" secondItem="4Nz-Bz-1ft" secondAttribute="bottom" id="KSQ-Wk-7sz"/>
                             <constraint firstItem="UEl-3Y-9uU" firstAttribute="top" secondItem="tbN-T4-s1o" secondAttribute="bottom" id="PaV-d7-9Wn"/>
+                            <constraint firstAttribute="bottom" secondItem="E8c-d4-Tfb" secondAttribute="bottom" id="Td8-BM-3eX"/>
                             <constraint firstItem="KXR-gJ-uCz" firstAttribute="top" secondItem="E8c-d4-Tfb" secondAttribute="bottom" id="W0f-nS-v00"/>
                             <constraint firstAttribute="trailing" secondItem="4Nz-Bz-1ft" secondAttribute="trailing" id="ZNV-vX-ydv"/>
                             <constraint firstItem="UEl-3Y-9uU" firstAttribute="leading" secondItem="pb8-ai-qf8" secondAttribute="leading" id="aVS-NP-rbt"/>
                             <constraint firstAttribute="bottom" secondItem="E8c-d4-Tfb" secondAttribute="bottom" id="ddy-4L-lnH"/>
+                            <constraint firstAttribute="bottom" secondItem="E8c-d4-Tfb" secondAttribute="bottom" id="fB2-4Y-YZy"/>
                             <constraint firstAttribute="trailing" secondItem="UEl-3Y-9uU" secondAttribute="trailing" id="fGl-Vh-Ctz"/>
                             <constraint firstItem="4Nz-Bz-1ft" firstAttribute="leading" secondItem="pb8-ai-qf8" secondAttribute="leading" id="frH-Ui-T9r"/>
                             <constraint firstItem="E8c-d4-Tfb" firstAttribute="top" secondItem="UEl-3Y-9uU" secondAttribute="bottom" id="kKS-rf-e2S"/>
+                            <constraint firstAttribute="bottom" secondItem="4Nz-Bz-1ft" secondAttribute="bottom" id="oTK-ew-5WI"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="ddy-4L-lnH"/>
+                                <exclude reference="fB2-4Y-YZy"/>
+                                <exclude reference="9Vg-Z2-gif"/>
                                 <exclude reference="W0f-nS-v00"/>
                             </mask>
                         </variation>
@@ -140,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="2901.5" y="363.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Mvp Nav Controller-->
         <scene sceneID="DV1-gc-YaV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ShA-Ep-nqH" sceneMemberID="viewController">
+                <navigationController id="ShA-Ep-nqH" customClass="MvpNavController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ro-fq-jPr">
@@ -160,4 +169,8 @@
             <point key="canvasLocation" x="2089" y="363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cy_rxc" width="40" height="40"/>
+        <image name="cy_xc" width="40" height="40"/>
+    </resources>
 </document>

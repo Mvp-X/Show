@@ -10,7 +10,7 @@
 #import "MvpChannel.h"
 #import "MvpChannelLabel.h"
 #import "MvpMoreCell.h"
-
+#import "Masonry.h"
 
 
 @interface MvpMoreController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -39,8 +39,15 @@
 
 @implementation MvpMoreController
 
+//-(void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    //让这个控件重新进行绘制,重新进行布局
+//    [self.view setTranslatesAutoresizingMaskIntoConstraints:YES];
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     //加载频道的Label
     [self setupChannelLabels];
     //关掉自适应
@@ -232,6 +239,7 @@
 #pragma mark - 设置底部注册-登录View
 
 -(void)setBottomView{
+    
     //在此判断是否登录--是否显示
     if(self.isLogin == NO){
         [self.view bringSubviewToFront: self.bottomView];
@@ -245,12 +253,8 @@
     
 }
 - (IBAction)ClickLeftItemButton:(UIBarButtonItem *)sender {
-    
-    [self dismissViewControllerAnimated:NO completion:Nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-}
 
 @end

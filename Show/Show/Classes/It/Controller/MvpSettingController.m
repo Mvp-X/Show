@@ -28,11 +28,6 @@
 }
 
 //初始化组样式的TabbleView
-- (instancetype)init
-{
-    return [super initWithStyle:UITableViewStyleGrouped];
-}
-
 - (instancetype)initWithStyle:(UITableViewStyle)style
 {
     return [super initWithStyle:UITableViewStyleGrouped];
@@ -158,13 +153,13 @@
 }
 
 //设置组头组尾高度
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 18;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    return 25;
+//}
 
--(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 1;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+//    return 1;
+//}
 
 // 打电话
 - (void)makeCall
@@ -190,7 +185,7 @@
     // 获取app
     UIApplication* app = [UIApplication sharedApplication];
     // 调用openUrl
-    [app openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/id414478124?mt=8&ls=1"]];
+    [app openURL:[NSURL URLWithString:@"https://WWW.baidu.com.cn"]];
 }
 
 

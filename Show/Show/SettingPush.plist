@@ -9,41 +9,41 @@
 				<key>plistName</key>
 				<string>SettingPush01</string>
 				<key>targetVC</key>
-				<string>SettingController</string>
+				<string>MvpSettingController</string>
 				<key>accessoryContent</key>
 				<string>arrow_right</string>
 				<key>accessoryType</key>
 				<string>UIImageView</string>
 				<key>title</key>
-				<string>开奖推送</string>
+				<string>推送系列</string>
 			</dict>
 			<dict>
 				<key>plistName</key>
 				<string>SettingPush02</string>
 				<key>targetVC</key>
-				<string>CZLiveController</string>
+				<string>MvpLiveController</string>
 				<key>accessoryContent</key>
 				<string>arrow_right</string>
 				<key>accessoryType</key>
 				<string>UIImageView</string>
 				<key>title</key>
-				<string>比分直播推送</string>
+				<string>关注-时段</string>
 			</dict>
 			<dict>
 				<key>plistName</key>
 				<string>SettingPush03</string>
 				<key>targetVC</key>
-				<string>SettingController</string>
+				<string>MvpSettingController</string>
 				<key>accessoryContent</key>
 				<string>arrow_right</string>
 				<key>accessoryType</key>
 				<string>UIImageView</string>
 				<key>title</key>
-				<string>中将动画</string>
+				<string>提醒动画</string>
 			</dict>
 			<dict>
 				<key>targetVC</key>
-				<string>SettingController</string>
+				<string>MvpSettingController</string>
 				<key>plistName</key>
 				<string>SettingPush04</string>
 				<key>accessoryContent</key>
@@ -51,13 +51,13 @@
 				<key>accessoryType</key>
 				<string>UIImageView</string>
 				<key>title</key>
-				<string>购彩提醒</string>
+				<string>友情提醒</string>
 			</dict>
 		</array>
 		<key>footer</key>
 		<string></string>
 		<key>header</key>
-		<string></string>
+		<string>心情很重要...</string>
 	</dict>
 </array>
 </plist>
